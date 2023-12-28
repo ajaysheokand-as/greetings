@@ -1,0 +1,127 @@
+.main {
+    background: linear-gradient(to right, #20d5db, #109260);
+    border-radius: 10px;
+}
+
+.content {
+    align-items: center;
+    background: linear-gradient(to right, #9d9dc9, #b35925);
+    border-radius: 70px 0px 70px 0px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img:nth-child(1) {
+    width: 100px;
+    padding: 0px 5px;
+    /* float: left; */
+}
+
+.logo img:nth-child(2) {
+    width: 200px;
+    padding: 15px 5px;
+}
+
+.logo img:nth-child(3) {
+    width: 100px;
+    padding: 0px 5px;
+    /* float: right; */
+}
+
+
+.outer_div {
+    /* background: linear-gradient(to right, #add8e6, #90ee90); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 54px 80px 4px 80px;
+    margin-top: 67px;
+    border-radius: 125px 0px 0px 0px;
+    position: relative;
+}
+
+.outer_div img {
+    position: absolute;
+    width: 100%;
+    left: -3%;
+    top: -4%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-family: jokerman;
+    color: #f61844;
+    padding: 5px 10px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+}
+
+input {
+    margin-bottom: 10px;
+    margin: 7px 14px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.bottom_logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.btn:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
+}
+.submit_btn{
+    display: flex;
+    justify-content: center;
+}
