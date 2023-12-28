@@ -23,6 +23,7 @@ body{
     background-image: url(./img/fire.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    height: fit-content;
     padding-bottom: 10%;
 }
 .msg{
@@ -41,9 +42,28 @@ body{
     font-style: italic;
     font-family: fangsong;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 530px) {
     .msg{
-        border-radius: 5px;
+        margin: 20% 7%;
+    }
+    .random-message{
+        font-size: large;
+    }
+
+}
+@media screen and (max-width: 430px) {
+    body{
+        /* padding-bottom: 190%; */
+        height: fit-content !important;
+        padding-bottom: 29% !important;
+    
+    }
+    .msg{
+        /* border-radius: 5px; */
+        margin: 20% 10%;
+    }
+    .year{
+        left: 5vh !important;
     }
 }
 

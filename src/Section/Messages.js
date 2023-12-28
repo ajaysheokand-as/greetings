@@ -21,10 +21,10 @@ function Messages() {
         setMessages([{ id: uuidv4(), text: randomMsg }]);
     }, []);
 
-    const refreshPage = () => {
-        const randomMsg = message[Math.floor(Math.random() * message.length)];
-        setMessages([{ id: uuidv4(), text: randomMsg }]);
-    };
+    // const refreshPage = () => {
+    //     const randomMsg = message[Math.floor(Math.random() * message.length)];
+    //     setMessages([{ id: uuidv4(), text: randomMsg }]);
+    // };
 
     return (
         <div className='random-message'>

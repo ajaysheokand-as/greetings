@@ -107,6 +107,7 @@ margin: 0 22% 5% 22%;
 
     .year {
         top: 215px; /* Adjust the top position for smaller screens */
+        left: 15vh;
     }
 
     .greeting h1 {
