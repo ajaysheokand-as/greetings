@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(./img/fire.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content{
+    display: grid;
+    padding-top: 10px;
+    padding-left: 10px;
+    gap: 13%;
+
+}
+.greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    padding-left: 38%;
+}
+.happy{
+    width: 368px;
+}
+.year{
+    position: absolute;
+    width: 239px;
+    top: 230px;
+}
+.greeting h1{
+    font-size: 100px;
+    top: 37%;
+    left: 44%;
+}
+.wishes{
+background-image: url(./img/movieww.gif);
+background-repeat: no-repeat;
+background-size: cover;
+width: fit-content;
+padding: 55px 40px;
+position: relative;
+border-radius: 15px;
+border-style: none;
+margin: 0 22% 5% 22%;
+
+}
+.wishes h3{
+    border-radius: 15px;
+    word-wrap: break-word;
+    font-size: x-large;
+
+}
+.boom1{
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    height: 239px;
+}
+.boom2{
+    position: absolute;
+    top: 45px;
+    right: 1px;
+    height: 143px;
+}
+.wishes h3:hover{
+    /* font-size: 90%; */
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 480px) {
+    .wishes{
+        padding: 12px 11px;
+        margin: 2%;
+
+    }
+    .content{
+        gap: 20px;
+        margin-bottom: 20%;
+    }
+    .happy{
+        max-width: 90%;
+    }
+    .year{
+    }
+
+} */
+
+@media (max-width: 430px) {
+    .content {
+        gap: 2%; /* Adjust the gap for even smaller screens */
+    }
+
+    .greeting {
+        padding-left: 5%; /* Adjust the padding for smaller screens */
+    }
+
+    .year {
+        top: 215px; /* Adjust the top position for smaller screens */
+    }
+
+    .greeting h1 {
+        font-size: 24px; /* Adjust the font size for even smaller screens */
+    }
+
+    .wishes {
+        margin: 5% 5%; /* Adjust the margin for even smaller screens */
+    }
+
+    .wishes h3 {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+    }
+
+    .boom1,
+    .boom2 {
+        display: none; /* Hide boom images on smaller screens */
+    }
+}
+
+@media (max-width: 840px) {
+    .content {
+        gap: 5%; /* Adjust the gap for larger screens */
+    }
+
+    .greeting {
+        padding-left: 10%; /* Adjust the padding for larger screens */
+    }
+
+    .year {
+        top: 200px; /* Adjust the top position for larger screens */
+    }
+
+    .wishes {
+        padding: 28px 40px; /* Reset padding for medium-sized screens */
+        margin: 0 15% 5% 15%; /* Adjust the margin for medium-sized screens */
+    }
+
+    .wishes h3 {
+        font-size: large; /* Adjust the font size for medium-sized screens */
+    }
+}

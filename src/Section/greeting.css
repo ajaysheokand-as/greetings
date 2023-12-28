@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-year{
+    width: 45vh;
+    height: 40vh;
+}
+.year{
+    width: 35vh;
+    height: 15vh;
+
+    top: 29vh;
+    left: 4vh;
+}
