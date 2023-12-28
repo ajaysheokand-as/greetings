@@ -19,3 +19,37 @@
     top: 29vh;
     left: 4vh;
 }
+body{
+    background-image: url(./img/fire.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+.msg{
+    width: fit-content;
+    padding: 25px 23px;
+    word-wrap: break-word;
+    margin: 10% 20%;
+    border-radius: 75px 9px 75px 4px;
+    box-shadow: 3px 2px 26px lavender;
+    background-image: url(./img/bg1.gif);
+
+}
+.random-message{
+    font-size: x-large;
+    color: cornsilk;
+    font-style: italic;
+    font-family: fangsong;
+}
+@media screen and (max-width: 430px) {
+    .msg{
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    body{
+        background-image: url(./img/bg2.gif) !important;
+    }
+    
+}
