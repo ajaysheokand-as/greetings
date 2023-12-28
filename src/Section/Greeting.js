@@ -18,6 +18,7 @@ function Greeting() {
           </div>
           <div className='msg'>
             <Messages/>
+            
           </div>
 
         </div>

@@ -35,6 +35,8 @@ body{
     box-shadow: 3px 2px 26px lavender;
     background-image: url(./img/bg1.gif);
 
+    background-color: black;
+
 }
 .random-message{
     font-size: x-large;
