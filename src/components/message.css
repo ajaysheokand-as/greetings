@@ -1,0 +1,41 @@
+/* Message component */
+/* .msg {
+    width: fit-content;
+    padding: 25px 23px;
+    word-wrap: break-word;
+    margin: 10% 20%;
+    border-radius: 75px 9px 75px 9px;
+    box-shadow: 3px 2px 26px lavender;
+    background-image: url(./img/bg1.gif);
+    background-color: black;
+
+} */
+
+.random-message {
+    /* font-size: x-large; */
+    color: greenyellow;
+    font-style: italic;
+    font-family: fangsong;
+    /* width: 50%; */
+}
+
+.next_btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnn {
+    border-radius: 7px;
+    background: deepskyblue;
+    padding: 3px 5px;
+    color: azure;
+    font-size: medium;
+    font-style: italic;
+    font-family: serif;
+}
+
+/* .wtsp_gif {
+    width: 44px;
+} */

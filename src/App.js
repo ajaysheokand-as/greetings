@@ -1,16 +1,26 @@
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import FriendList from './components/FriendList';
+import Home from './components/Home';
 
 import Greeting from './Section/Greeting';
 
 
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <>
+            <Router>
+                <Routes>
+                    <Route path='/form' element={<Home />} />
+                    <Route path='/' element={<Greeting />} />
+                    {/* <Route path='/friend' element={<FriendList />} /> */}
+                </Routes>
+            </Router>
 
-      <Greeting />
-
-    </div>
-  );
+        </>
+    );
 }
 
 export default App;
