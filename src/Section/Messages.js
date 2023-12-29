@@ -14,7 +14,7 @@ const message = [
     'May this year bring new happiness, new goals, new achievements, and a lot of new inspirations on your life. Wishing you a year fully loaded with happiness.',
 ];
 
-function Messages() {
+function Messages(props) {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ function Messages() {
                     {messages.map((message) => (
                         <li key={message.id}>{message.text} <br />
                             <div className='sender'>
-                                <span className='person'>From Sahil</span>
+                                <span className='person'>From {props.fromName}</span>
                                 <span><img className='icon' src={kodu} alt='not found' /></span>
                             </div></li>
                     ))}

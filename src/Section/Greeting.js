@@ -6,19 +6,23 @@ import './Messages'
 import Messages from './Messages';
 
 function Greeting() {
+  const queryParameters = new URLSearchParams(window.location.search)
+  const name = queryParameters.get("n");
+  const fromName = queryParameters.get("f");
+  console.log("data form URL", name, fromName);
   return (
     <>
       <div className='container-fluid'>
         <div className='row block'>
           <div className='col-md-12 text'>
             <div className='content relative'>
-              <span className='name'>Hey Sahil!</span>
+              <span className='name'>Hey {name}</span>
               <img className='new-year' src={happy} alt='Not Found'></img>
               <img className='year absolute' src={year} alt='not found' />
             </div>
           </div>
           <div className='msg'>
-            <Messages />
+            <Messages fromName={fromName}/>
           </div>
           <div className='own'>
             <button>Create Your own</button>
