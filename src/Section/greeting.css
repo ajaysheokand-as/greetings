@@ -1,77 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.text{
+
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.new-year{
+.name{
+    position: absolute;
+    left: 27%;
+    top: 7%;
+    font-size: xx-large;
+    color: lightblue;
+    font-family: auto;
+}
+
+.new-year {
     width: 45vh;
     height: 40vh;
 }
-.year{
+
+.year {
     width: 35vh;
     height: 15vh;
 
     top: 29vh;
     left: 4vh;
 }
-body{
+
+body {
     background-image: url(./img/fire.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
     padding-bottom: 10%;
 }
-.msg{
+
+/* Message component */
+.msg {
     width: fit-content;
     padding: 25px 23px;
     word-wrap: break-word;
     margin: 10% 20%;
-    border-radius: 75px 9px 75px 4px;
+    border-radius: 75px 9px 75px 9px;
     box-shadow: 3px 2px 26px lavender;
     background-image: url(./img/bg1.gif);
 
     background-color: black;
 
 }
-.random-message{
+
+.random-message {
     font-size: x-large;
     color: cornsilk;
     font-style: italic;
     font-family: fangsong;
 }
+.sender{
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+
+.person{
+    /* padding-top: 5%; */
+    color: darkseagreen;
+}
+
+.icon{
+    height: 10vh;
+}
+
+/* .form{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+} */
+
+
+.next_btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnn {
+    border-radius: 7px;
+    background: deepskyblue;
+    padding: 3px 5px;
+    color: azure;
+    font-size: medium;
+    font-style: italic;
+    font-family: serif;
+}
+
+.wtsp_gif {
+    width: 44px;
+}
+
+.own {
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+}
+
+.own button {
+    background-color: cornflowerblue;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: larger;
+    font-family: fangsong;
+    font-style: italic;
+}
+
+
 @media screen and (max-width: 530px) {
-    .msg{
+    .msg {
         margin: 20% 7%;
     }
-    .random-message{
+
+    .random-message {
         font-size: large;
     }
 
 }
+
 @media screen and (max-width: 430px) {
-    body{
+    body {
         /* padding-bottom: 190%; */
         height: fit-content !important;
         padding-bottom: 29% !important;
-    
+
     }
-    .msg{
+
+    .msg {
         /* border-radius: 5px; */
         margin: 20% 10%;
     }
-    .year{
+
+    .year {
         left: 5vh !important;
     }
 }
 
 @media screen and (max-width: 1020px) {
-    body{
+    body {
         background-image: url(./img/bg2.gif) !important;
     }
-    
+
 }

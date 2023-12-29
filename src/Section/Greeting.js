@@ -12,13 +12,16 @@ function Greeting() {
         <div className='row block'>
           <div className='col-md-12 text'>
             <div className='content relative'>
+              <span className='name'>Hey Sahil!</span>
               <img className='new-year' src={happy} alt='Not Found'></img>
               <img className='year absolute' src={year} alt='not found' />
             </div>
           </div>
           <div className='msg'>
-            <Messages/>
-            
+            <Messages />
+          </div>
+          <div className='own'>
+            <button>Create Your own</button>
           </div>
 
         </div>
