@@ -1,6 +1,7 @@
 .counter_main {
     position: relative;
 }
+
 .name {
     color: white;
     position: absolute;
@@ -9,17 +10,31 @@
     height: 81px;
     left: 95px;
 }
+
 .time {
     display: flex;
     justify-content: space-between;
 }
-.time_box{
+
+.time_box {
     text-align: center;
     margin-top: 10px;
 }
-.time_box span{
+
+.time_box span {
     background: black;
     padding: 10px;
     border-radius: 40%;
     font-size: 25px;
+}
+
+@media screen and (max-width: 425px) {
+    .name {
+        color: white;
+        position: absolute;
+        top: 140px;
+        width: 70%;
+        height: 81px;
+        left: 69px;
+    }
 }

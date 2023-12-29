@@ -1,13 +1,20 @@
 .main {
-    background: linear-gradient(to right, #20d5db, #109260);
+    /* background: linear-gradient(to right, #20d5db, #109260); */
+    background-image: url(../images/download2.jpg);
+    background-size: cover;
     border-radius: 10px;
 }
 
 .content {
     align-items: center;
-    background: linear-gradient(to right, #9d9dc9, #b35925);
+    background: linear-gradient(to right, #b15acc, #b35925);
     border-radius: 70px 0px 70px 0px;
+    /* width: 660px; */
 }
+/* #root{
+    display: flex;
+    justify-content: center;
+} */
 
 .logo {
     display: flex;
@@ -34,11 +41,12 @@
 
 .outer_div {
     /* background: linear-gradient(to right, #add8e6, #90ee90); */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 54px 80px 4px 80px;
     margin-top: 67px;
     border-radius: 125px 0px 0px 0px;
-    position: relative;
+    position: relative; */
+    /* display: flex; */
 }
 
 .outer_div img {
@@ -61,8 +69,22 @@ form {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 400px;
+    height: 330px;
     z-index: 1;
+}
+
+.friend_names {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.friend_names h6 {
+    display: flex;
+    justify-content: center;
 }
 
 input {
@@ -72,8 +94,8 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent white */
 }
-
 .bottom_logo {
     display: flex;
     justify-content: space-around;
@@ -81,7 +103,7 @@ input {
 
 .btn {
     appearance: none;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent white */
     border-radius: 40em;
     border-style: none;
     box-shadow: #ADCFFF 0 -12px 6px inset;
@@ -121,7 +143,150 @@ input {
         padding: .75rem 2rem;
     }
 }
-.submit_btn{
+
+.submit_btn {
     display: flex;
     justify-content: center;
+}
+
+.outer_div {
+    /* background: linear-gradient(to right, #add8e6, #90ee90); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 54px 30px 4px 30px;
+    margin-top: 67px !important;
+    border-radius: 125px 0px 0px 0px;
+    position: relative;
+    /* width: 100%; */
+    /* display: flex; */
+}
+
+@media screen and (max-width: 768px) {
+    .outer_div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    label {
+        /* font-size: 30px; */
+    }
+
+    input {
+        width: 87%;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .submit_btn {
+        text-align: center;
+    }
+
+    .friend_names {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 12px;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content {
+        background: linear-gradient(to right, rgba(157, 157, 201, 0.7), rgba(179, 89, 37, 0.7));
+        margin-top: 35px;
+    }
+
+    .outer_div {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 70px 10px 4px 15px;
+        margin-top: 67px;
+        border-radius: 125px 0px 0px 0px;
+        position: relative;
+        /* width: 80%; */
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+
+    .friend_names {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    .outer_div img {
+        position: absolute;
+        width: 409px;
+        left: -10%;
+        top: -4%;
+    }
+
+    .logo img:nth-child(1),
+    .logo img:nth-child(3) {
+        width: 85px;
+        height: 135px;
+        padding: 0px 5px;
+        /* float: left; */
+    }
+
+    .logo img:nth-child(2) {
+        width: 180px;
+        height: 99px;
+        padding: 15px 5px;
+    }
+
+    .name {
+        color: white;
+        position: absolute;
+        top: 170px !important;
+        width: 70%;
+        height: 81px;
+        left: 69px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #root {
+        /* overflow-x: hidden; */
+    }
+
+    .content {
+        width: 102%;
+    }
+
+    .outer_div {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 70px 8px 4px 16px;
+        margin-top: 67px;
+        border-radius: 125px 0px 0px 0px;
+        position: relative;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    .friend_names {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
 }

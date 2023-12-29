@@ -45,15 +45,15 @@ body {
 } */
 
 
-input[type="submit"] {
+/* input[type="submit"] {
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
-}
+} */
 
-input[type="submit"]:hover {
+/* input[type="submit"]:hover {
   background-color: #0056b3;
-}
+} */
 
 h4 {
   margin: 0;
