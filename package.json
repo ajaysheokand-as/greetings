@@ -1,4 +1,7 @@
 {
+  "scripts":{
+    "start":"vite"
+  },
   "name": "wishes",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +15,7 @@
     "react-router-dom": "^6.21.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "vite": "^5.0.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
   }
 }
