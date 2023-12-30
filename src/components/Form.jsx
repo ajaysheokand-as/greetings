@@ -25,7 +25,7 @@ function Form() {
 
     return (
         <>
-            <div className='content'>
+            <div className='form-content'>
                 <div className='logo'>
                     <img src={new_year2} alt='happy' />
                     <img src={new_year} alt='happy' />

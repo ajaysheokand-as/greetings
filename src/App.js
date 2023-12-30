@@ -13,8 +13,8 @@ function App() {
         <>
             <Router>
                 <Routes>
-                    <Route path='/form' element={<Home />} />
                     <Route path='/' element={<Greeting />} />
+                    <Route path='/form' element={<Home />} />
                     {/* <Route path='/friend' element={<FriendList />} /> */}
                 </Routes>
             </Router>

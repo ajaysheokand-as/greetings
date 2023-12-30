@@ -35,7 +35,7 @@ function Messages(props) {
                     {messages.map((message) => (
                         <li key={message.id}>{message.text} <br />
                             <div className='sender'>
-                                <span className='person'>From {props.fromName}</span>
+                                {props.fromName && <span className='person'>From {props.fromName}</span>}
                                 <span><img className='icon' src={kodu} alt='not found' /></span>
                             </div></li>
                     ))}

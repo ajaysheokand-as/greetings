@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.name{
+.greeting-name{
     position: absolute;
     left: 27%;
     top: 7%;

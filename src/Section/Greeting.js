@@ -16,7 +16,7 @@ function Greeting() {
         <div className='row block'>
           <div className='col-md-12 text'>
             <div className='content relative'>
-              <span className='name'>Hey {name}</span>
+              { name && <span className='greeting-name'>Hey {name}</span>}
               <img className='new-year' src={happy} alt='Not Found'></img>
               <img className='year absolute' src={year} alt='not found' />
             </div>
